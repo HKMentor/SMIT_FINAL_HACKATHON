@@ -14,17 +14,26 @@ body {
   align-items: center;
   flex-wrap: wrap;
   color: white;
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in effect for the navbar */
 }
 
 .uniq a {
   margin: 0 3px;
   font-size: 18px;
   color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+  animation: iconFade 2s ease-in-out; 
+}
+
+.uniq a:hover {
+  color: #7db937; 
+  transform: scale(1.2); 
 }
 
 .para {
   font-size: 15px;
   margin-left: 40rem;
+  animation: textSlide 1.5s ease-out; 
 }
 
 .btn1 {
@@ -34,6 +43,101 @@ body {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: buttonPop 2s ease-in-out; 
+}
+
+.btn1:hover {
+  background-color: #5ba127;
+  transform: scale(1.1);
+  animation: bounce 0.6s ease-out; 
+}
+
+/* Keyframes for animation effects */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes iconFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes buttonPop {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .para {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .Head1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .uniq a {
+    font-size: 16px;
+    margin: 0 3px;
+  }
+
+  .btn1 {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .para {
+    font-size: 14px;
+  }
 }
 
 /* Navigation */
