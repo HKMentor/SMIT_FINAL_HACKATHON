@@ -382,7 +382,6 @@ body {
   color: #7db937;
 }
 
-/* Responsive Styles for Medium Screens (Tablets and Smaller Desktops) */
 @media (max-width: 768px) {
   .service p {
     width: 90%;
@@ -405,7 +404,6 @@ body {
   }
 }
 
-/* Responsive Styles for Small Screens (Mobiles) */
 @media (max-width: 480px) {
   .Service h1 {
     font-size: 1.8rem;
@@ -445,7 +443,6 @@ body {
   }
 }
 
-/* Base Styles for Larger Screens (No Changes) */
 .portfolio2 {
   text-align: center;
   padding: 10px 40px;
@@ -702,7 +699,6 @@ body {
 .avatarimg1 {
   width: 90px;
   height: 90px;
-  /* background-color: #ddd; */
   border-radius: 50%;
 }
 
@@ -785,7 +781,6 @@ body {
   }
 }
 
-/* Responsive Styles for Mobile (Small Screens) */
 @media (max-width: 480px) {
   .our-skill h2 {
     font-size: 1.5rem;
@@ -1103,91 +1098,65 @@ button:hover {
   /* General Styles */
   body {
     font-size: 14px;
-    /* Adjust font size for better readability */
     margin: 0;
-    /* Remove default margin */
     padding: 0;
-    /* Remove default padding */
   }
 
   /* Header Section */
   .Head1 {
     flex-direction: column;
-    /* Stack items vertically */
     align-items: flex-start;
-    /* Align items to the start */
     padding: 10px;
-    /* Add padding for better spacing */
   }
 
   .uniq a {
     font-size: 16px;
-    /* Smaller font size for links */
   }
 
   .para {
     margin: 10px 0;
-    /* Add vertical margin for paragraphs */
     font-size: 15px;
-    /* Adjust font size for better readability */
     line-height: 1.5;
-    /* Improve line height for readability */
     padding: 0 10px;
-    /* Add horizontal padding for better spacing */
   }
 
   /* Navigation */
   .nav {
     flex-direction: column;
-    /* Stack navigation items vertically */
     align-items: flex-start;
-    /* Align items to the start */
     padding: 10px;
-    /* Add padding for better spacing */
   }
 
   .link {
     flex-direction: column;
-    /* Stack link items vertically */
     align-items: flex-start;
-    /* Align items to the start */
     gap: 10px;
-    /* Reduce gap between links */
   }
 
   .link li {
     margin-top: 5px;
-    /* Reduce margin for list items */
   }
 
   /* Main Section */
   .home {
     height: auto;
-    /* Allow height to adjust based on content */
     margin-top: 10px;
-    /* Add margin for spacing */
   }
 
   .home-content h1 {
     font-size: 2rem;
-    /* Smaller font size for headings */
     margin: 10px 0;
-    /* Add margin for spacing */
   }
 
   .home-content p {
     font-size: 14px;
-    /* Smaller font size for paragraphs */
     margin: 10px 0;
-    /* Add margin for spacing */
   }
 
   /* Circle Items */
   .circle-item {
     flex: 1 1 calc(100% - 20px);
-    /* Adjust to full width for one item per row */
     margin-bottom: 20px;
-    /* Add margin for spacing */
   }
 
 
@@ -1208,32 +1177,22 @@ button:hover {
 
   .advantages p {
     font-size: 14px;
-    /* Adjust font size for better readability */
     color: #666;
-    /* Maintain color for consistency */
     line-height: 1.5;
-    /* Improve line height for readability */
     margin: 10px 0;
-    /* Add vertical margin */
     padding: 0 10px;
-    /* Add horizontal padding for better spacing */
   }
 
 
   /* Footer */
   .footer-main {
     flex-direction: column;
-    /* Stack footer items vertically */
     align-items: center;
-    /* Center align footer items */
     padding: 10px;
-    /* Add padding for better spacing */
   }
 
   .footer-links {
     flex-direction: column;
-    /* Stack footer links vertically */
     align-items: center;
-    /* Center align footer links */
   }
 }
